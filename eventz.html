@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Background</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel='stylesheet prefetch' href='http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'>
+    <link rel="stylesheet" href="assets/styles/qube.min.css">
+    <link rel="stylesheet" href="assets/styles/events.css">
+    <link rel="stylesheet" href="assets/styles/owl.carousel.css">
+    <link rel="stylesheet" href="assets/styles/owl.theme.css">
+    <link rel="stylesheet" href="assets/styles/materialize.min.css">
+
+</head>
+<body>
+
+
+<div id="large-header" class="large-header" style="display: inline-block">
+    {{heading}}
+    <div id="eventButtons">
+        <a class="waves-effect waves-light btn" ng-click="initEvents(0)">Technical Events</a><br><br><br>
+        <a class="waves-effect waves-light btn" ng-click="initEvents(1)">Non-Technical Events</a>
+    </div>
+
+    <div id="tech-buttons" ng-repeat="event in selectedEvents">
+        <a class="btn-floating btn-large waves-effect waves-light red"><i class="fa {{event.iconName}}" aria-hidden="true"></i></a><br>
+    </div>
+
+        <div class="cubeWrapper">
+            <div class="stage" >
+                <div class="cubespinner">
+                    <div class="face1"><img src="assets/images/avengers.png" alt=""></div>
+                    <div class="face3"><img src="assets/images/Flash_Logo.png" alt=""></div>
+                    <div class="face2"><img src="assets/images/Captain_America_Shield.png" alt=""></div>
+                    <div class="face5"><img src="assets/images/avengers.png" alt=""></div>
+                    <div class="face4"><img src="assets/images/Flash_Logo.png" alt=""></div>
+                    <div class="face6"><img src="assets/images/Captain_America_Shield.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <canvas id="demo-canvas"></canvas>
+        <br>
+
+        <div id="detailsCarousel" class="owl-carousel">
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+        </div>
+    </div>
+
+
+    <script src='http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+    <script src='http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+
+
+</body>
+</html>
