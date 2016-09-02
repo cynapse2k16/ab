@@ -1,8 +1,8 @@
 (function($){
-  angular.element(function(){
+  $(function(){
 
-    angular.element('.button-collapse').sideNav();
-    angular.element('.parallax').parallax();
+    $('.button-collapse').sideNav();
+    $('.parallax').parallax();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
